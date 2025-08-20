@@ -5,9 +5,6 @@ def time_to_hours(hours, minutes):
 
 def main():
     st.title("Attendance Percentage Calculator")
-
-    # Placeholder for results at the top
-    result_placeholder = st.empty()
     
     # Create 3 columns for Practical, Tutorial, Lecturer
     col1, col2, col3 = st.columns(3)
@@ -35,6 +32,9 @@ def main():
         lecturer_hours = st.number_input("Hours", min_value=0, step=1, value=0, key="l_hours")
         lecturer_minutes = st.number_input("Minutes", min_value=0, max_value=59, step=30, value=0, key="l_mins")
         lecturer_missed_classes = st.number_input("Missed", min_value=0, step=1, value=0, key="l_missed")
+
+    # Placeholder for results
+    result_placeholder = st.empty()
 
     # Calculate total class hours
     total_practical = practical_count * time_to_hours(practical_hours, practical_minutes)
@@ -81,3 +81,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
