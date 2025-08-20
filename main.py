@@ -60,25 +60,26 @@ def main():
         # Update the result placeholder with formatted output
         result_placeholder.markdown(f"""
             <div style="border: 2px solid #333; padding: 10px; margin-bottom: 20px;">
-                <h5>Total class hours: {total_hours:.2f} hours</h5>
-                <h5>Total missed hours: {total_missed_hours:.2f} hours</h5>
                 <h5 style="color: {'red' if attendance_percentage < 80 else 'green'};">
                     Attendance Percentage: {attendance_percentage:.2f}%
                 </h5>
+                <h5>Total class hours: {total_hours:.2f} hours</h5>
+                <h5>Total missed hours: {total_missed_hours:.2f} hours</h5>
             </div>
         """, unsafe_allow_html=True)
 
     else:
         result_placeholder.markdown(f"""
             <div style="border: 2px solid #333; padding: 10px; margin-bottom: 20px;">
-                <h5>Total class hours: 0 hours</h5>
-                <h5>Total missed hours: 0 hours</h5>
                 <h5 style="color: {'red' if attendance_percentage < 80 else 'green'};">
                     Missed classes too many!
                 </h5>
+                <h5>Total class hours: 0 hours</h5>
+                <h5>Total missed hours: 0 hours</h5>
             </div>
         """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
 
