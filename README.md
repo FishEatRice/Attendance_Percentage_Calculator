@@ -5,6 +5,10 @@ This is a simple and interactive web app built with [Streamlit](https://streamli
 🖥️ **Live Demo**:  
 [https://fisheatrice-attendance-percentage-calculator-main-7n21ae.streamlit.app/](https://fisheatrice-attendance-percentage-calculator-main-7n21ae.streamlit.app/)
 
+## 📸 Screenshot
+
+![Attendance Calculator UI](screenshot.png)
+
 ---
 
 ## ✨ Features
