@@ -7,7 +7,9 @@ This is a simple and interactive web app built with [Streamlit](https://streamli
 
 ## 📸 Screenshot
 
-![Attendance Calculator UI](screenshot.png)
+![Attendance Calculator UI 1](screenshot_1.png)
+
+![Attendance Calculator UI 2](screenshot_2.png)
 
 ---
 
